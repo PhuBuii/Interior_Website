@@ -1,0 +1,152 @@
+/* Header */
+header {
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  padding-top: 20px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header .header_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+header img {
+  width: 40%;
+}
+
+header .header_right {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header_right_icon {
+  margin-left: 5%;
+  display: flex;
+}
+
+header .header_right_icon > a {
+  padding-left: 50%;
+  position: relative;
+  top: 20%;
+}
+
+header .header_right .header_right_search {
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+header .header_right .header_right_search > i {
+  position: relative;
+  top: 20%;
+}
+
+header .header_right .header_right_search input {
+  border: none;
+  caret-color: var(--detail-color);
+  height: 100%;
+  outline: none;
+  padding: 0 5%;
+  flex: 1;
+}
+
+header a {
+  color: black;
+}
+
+/* Navbar */
+header .navbar {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+header .navbar a {
+  text-decoration: none;
+  font-size: 16px;
+}
+header .navbar li.marked a:after {
+  content: "";
+  width: 60%;
+  height: 7px;
+  background: var(--highlight-color);
+  left: 15px;
+  bottom: 14px;
+  z-index: -1;
+  position: absolute;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--detail-color);
+}
+
+header .navbar li:focus-within ul,
+header .navbar li:hover ul,
+header .navbar li:hover img {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .bg_menu_1 {
+  position: absolute;
+  left: -28.75vw;
+  top: 4.25vh;
+  background-color: var(--navbar-menu-color);
+  width: 100vw;
+}
+
+.navbar .menu_1 {
+  display: flex;
+  padding: 0 10%;
+}
+
+.navbar .menu_1 ul,
+.navbar .menu_1 img {
+  display: none;
+}
+
+header .navbar .menu_2 ul,
+header .navbar .menu_3 ul {
+  background-color: var(--navbar-menu-color);
+  top: 4.25vh;
+  position: absolute;
+  width: 250%;
+  display: none;
+}
+
+header .navbar ul li ul li a {
+  color: white;
+}
+
+.navbar ul li ul li a:hover,
+.navbar ul li ul li a.active {
+  color: var(--detail-color);
+}
+header .navbar .menu_3 ul {
+  width: 100vw;
+  top: 4.25vh;
+  left: -78vw;
+}
