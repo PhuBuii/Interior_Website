@@ -87,20 +87,21 @@ header .navbar a {
   text-decoration: none;
   font-size: 16px;
 }
-header .navbar li.marked a:after {
+header .navbar li a:hover::after {
   content: "";
-  width: 60%;
+  width: 70%;
   height: 7px;
   background: var(--highlight-color);
-  left: 15px;
-  bottom: 14px;
+  left: 5px;
+  bottom: 12px;
   z-index: -1;
   position: absolute;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--detail-color);
+  color: rgb(111, 111, 111);
+  font-weight: 600;
 }
 
 header .navbar li:focus-within ul,
@@ -120,11 +121,13 @@ header .navbar li:hover img {
 
 .navbar .menu_1 {
   display: flex;
-  padding: 0 10%;
+  padding: 0% 10%;
 }
 
 .navbar .menu_1 ul,
 .navbar .menu_1 img {
+  padding-top: 2%;
+  justify-content: flex-start;
   display: none;
 }
 

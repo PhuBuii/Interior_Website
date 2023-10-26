@@ -7,9 +7,15 @@
 }
 .category_img img {
   width: 18vw;
+  border-radius: 10px;
 }
 .category_img-card {
   text-decoration: none;
+
+  display: block;
+}
+.category_img-card:hover img {
+  scale: 0.95;
 }
 .category_img-card > p {
   margin-top: 5%;
@@ -45,4 +51,59 @@
 }
 #page2 img {
   width: 18.5vw;
+}
+
+/*Concept*/
+.concept {
+  display: flex;
+}
+#M-concept {
+  width: 40vw;
+  margin: 5% 10%;
+}
+
+#M-concept img,
+.category_show img {
+  transition: transform 0.9s ease; /* Áp dụng hiệu ứng trong 0.3 giây */
+}
+
+#M-concept .carousel-inner:hover img {
+  transform: scale(1.2); /* Phóng to hình ảnh lên 1.2 lần khi hover */
+}
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px; /* Điều chỉnh kích thước biểu tượng tùy ý */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#M-concept .carousel-inner:hover .play-icon {
+  opacity: 1;
+  text-shadow: 0px 0px 50px rgb(142, 142, 142);
+}
+#M-concept h5 {
+  color: var(--tilte-color);
+  text-shadow: 0 0 5px var(--detail-color);
+  font-weight: 600;
+}
+
+.concept-content {
+  position: relative;
+  left: 5%;
+  margin: 5%;
+  padding-left: 2%;
+  height: 5%;
+  border-left: 30px solid var(--highlight-color);
+}
+.concept-content h1 {
+  margin-bottom: 2%;
+  font-weight: 600;
+  font-size: 21px;
+}
+.concept-content h2 {
+  padding: 1%;
+  font-size: 15px;
+  color: var(--detail-color);
 }

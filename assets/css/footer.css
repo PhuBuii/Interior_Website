@@ -1,31 +1,30 @@
 .share {
-  display: flex;
-  flex: 1 1;
   align-items: center;
   margin: auto;
   margin-top: 5%;
   position: relative;
+  left: 5%;
 }
 .share > h3 > a {
   text-decoration: none;
   position: relative;
   z-index: 1;
-  top: 57%;
-  left: 25%;
   color: var(--title-color);
-  font-size: 17px;
+  font-size: 27px;
   font-weight: 600;
   margin-bottom: 5%;
+  padding-left: 1%;
+  border-left: 10px solid var(--highlight-color);
 }
 .share_container {
-  width: 40vw;
+  width: 60vw;
 }
 
 /*Footer*/
 .footer_container {
   margin-top: 5%;
   display: flex;
-  width: 60vw;
+  width: 80vw;
   justify-content: space-evenly;
 }
 .footer_content {
