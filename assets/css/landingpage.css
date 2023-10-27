@@ -52,7 +52,69 @@
 #page2 img {
   width: 18.5vw;
 }
-
+/*Why Choose Us*/
+.whychooseus {
+  height: 60vh;
+}
+.whychooseus .bg {
+  padding: 14rem 0;
+  background: url(../images/landingpage/WhyChooseUs/bg_1.webp) no-repeat scroll
+    center center;
+  background-size: cover;
+  position: relative;
+  z-index: 0 !important;
+}
+.bg .container {
+  position: relative;
+  text-align: center;
+}
+.bg .container h1 {
+  color: var(--highlight-color);
+  text-shadow: 0 0 10px rgb(130, 130, 130);
+  font-size: 50px;
+  font-weight: 600;
+}
+.bg .container h5 {
+  font-size: 20px;
+}
+.whychooseus .content {
+  position: relative;
+  top: -15vh;
+  left: 10vw;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  background-color: white;
+  width: 80vw;
+  height: 25vh;
+  z-index: 1 !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+.whychooseus .content .item {
+  z-index: 2 !important;
+  width: 25%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid var(--detail-color);
+  transition: transform 0.3s ease;
+}
+.whychooseus .content .item:hover {
+  transform: translateY(-10px);
+}
+.item.none-border {
+  border: 0px !important;
+}
+.whychooseus .content .item img {
+  width: 5vw;
+  height: 5vw;
+}
+.whychooseus .content .item p {
+  font-weight: 600;
+  margin-top: 10%;
+  font-size: 17px;
+}
 /*Concept*/
 .concept {
   display: flex;
@@ -102,8 +164,129 @@
   font-weight: 600;
   font-size: 21px;
 }
-.concept-content h2 {
+.concept-content p {
   padding: 1%;
   font-size: 15px;
   color: var(--detail-color);
+}
+/*Project*/
+.project-content h3 {
+  font-size: 27px;
+  font-weight: 600;
+  border-left: 10px solid var(--highlight-color);
+  padding-left: 10px;
+}
+.filter-bar {
+  text-align: center;
+  margin: 20px;
+}
+.filter-button {
+  font-size: 15px;
+  margin: 5px;
+  padding: 1%;
+  width: 10vw;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.filter-button:hover,
+.filter-button.active {
+  background-color: var(--highlight-color);
+  color: white;
+  font-weight: 600;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+.project {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  width: 23vw;
+  height: 25vh;
+}
+
+.project img {
+  width: 23vw;
+  height: 25vh;
+  object-fit: cover;
+  transition: opacity 1s ease;
+}
+
+.project img.hover-image {
+  position: absolute;
+  left: 0vw;
+  opacity: 0;
+}
+
+.project:hover .original-image {
+  opacity: 0;
+}
+.project:hover .hover-image {
+  opacity: 1;
+}
+
+.project.show {
+  animation: fadeIn 1s both;
+}
+.btn-more {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.btn-more button {
+  background-color: var(--highlight-color);
+  border-radius: 10px;
+  width: 10vw;
+  height: 5vh;
+}
+.btn-more button:hover {
+  font-weight: 600;
+  color: white;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*About Us*/
+.about {
+  display: flex;
+  flex: 1 1;
+  padding: 5% 0;
+  padding-bottom: 0;
+}
+.about .content {
+  width: 30vw;
+  padding: 5%;
+}
+.about .content h1 {
+  font-weight: 600;
+  color: var(--tilte-color);
+}
+.about .content p {
+  color: var(--detail-color);
+  text-align: justify;
+}
+.about .content hr {
+  position: relative;
+  top: -2.5vh;
+  left: -1vw;
+  color: yellow;
+  z-index: -1;
+}
+.about .bg img {
+  width: 70vw;
 }
