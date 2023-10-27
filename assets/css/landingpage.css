@@ -53,12 +53,10 @@
   width: 18.5vw;
 }
 /*Why Choose Us*/
-.whychooseus {
-  height: 60vh;
-}
+
 .whychooseus .bg {
   padding: 14rem 0;
-  background: url(../images/landingpage/WhyChooseUs/bg_1.webp) no-repeat scroll
+  background: url(../images/landingpage/WhyChooseUs/bg_1.jpeg) no-repeat scroll
     center center;
   background-size: cover;
   position: relative;
@@ -76,6 +74,7 @@
 }
 .bg .container h5 {
   font-size: 20px;
+  text-shadow: 0 0 10px rgb(130, 130, 130);
 }
 .whychooseus .content {
   position: relative;
@@ -192,7 +191,6 @@
 .filter-button:hover,
 .filter-button.active {
   background-color: var(--highlight-color);
-  color: white;
   font-weight: 600;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
@@ -244,12 +242,10 @@
 .btn-more button {
   background-color: var(--highlight-color);
   border-radius: 10px;
-  width: 10vw;
-  height: 5vh;
+  padding: 1% 5%;
 }
 .btn-more button:hover {
   font-weight: 600;
-  color: white;
 }
 @keyframes fadeIn {
   from {
@@ -270,7 +266,7 @@
 }
 .about .content {
   width: 30vw;
-  padding: 5%;
+  padding: 0 5%;
 }
 .about .content h1 {
   font-weight: 600;
