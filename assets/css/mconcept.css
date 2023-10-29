@@ -1,5 +1,5 @@
 .concept-header {
-  margin-top: 15vh;
+  margin-top: 10%;
   display: flex;
   width: 80vw;
   position: relative;
@@ -68,8 +68,13 @@ iframe {
   font-weight: 600;
   color: var(--title-color);
 }
+.concept-items .item p:hover,
+.concept-items .item h2:hover {
+  opacity: 0.8;
+}
 .concept-items .item p {
   color: var(--detail-color);
+  font-size: 15px;
   margin: 0;
 }
 .concept-items .item p > b {

@@ -84,7 +84,6 @@
   border-radius: 10px;
   background-color: white;
   width: 80vw;
-  height: 25vh;
   z-index: 1 !important;
   display: flex;
   justify-content: space-evenly;
@@ -278,8 +277,9 @@
 }
 .about .content hr {
   position: relative;
-  top: -2.5vh;
-  left: -1vw;
+  top: -4%;
+  left: -7%;
+  width: 40%;
   color: yellow;
   z-index: -1;
 }
