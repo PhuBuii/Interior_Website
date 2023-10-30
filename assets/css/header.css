@@ -100,7 +100,7 @@ header .navbar li a.marked:hover::after {
 
 .navbar a:hover,
 .navbar a.active {
-  color: rgb(111, 111, 111);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 header .navbar li:focus-within ul,
