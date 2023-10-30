@@ -13,6 +13,7 @@
 }
 .gioithieu_header {
   padding-top: 10%;
+  height: 100vh;
 }
 .gioithieu_header h1 {
   position: relative;
