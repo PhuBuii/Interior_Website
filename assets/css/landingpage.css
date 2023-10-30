@@ -290,3 +290,53 @@
 .about .bg img {
   width: 70vw;
 }
+/*Modal*/
+.popup {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(86, 86, 86, 0.5);
+  z-index: 1000;
+  animation: modalOpacity ease 1s;
+}
+.popup-container {
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  position: relative;
+  top: 25vh;
+  left: 25vw;
+}
+.modal-close {
+  position: relative;
+  left: 95%;
+  top: 2%;
+  padding: 12px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.modal-close:hover {
+  color: var(--highlight-color);
+}
+
+.video-container {
+  position: relative;
+  left: 5%;
+  height: 100%;
+}
+@keyframes modalOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.popup.open {
+  display: block;
+}

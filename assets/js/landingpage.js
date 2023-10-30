@@ -1,4 +1,4 @@
-// script.js
+// filter
 document.addEventListener("DOMContentLoaded", function () {
   const filterButtons = document.querySelectorAll(".filter-button");
   const projects = document.querySelectorAll(".project");
@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// script.js
 $(document).ready(function () {
   $(".filter-button").click(function () {
     const filter = $(this).attr("id");
@@ -36,3 +35,21 @@ $(document).ready(function () {
     }
   });
 });
+//popup
+const mconcept_shows = document.querySelectorAll("#mconcept-show");
+const closeBtn = document.querySelector(".js-close-btn");
+const modal = document.querySelector(".js-modal");
+const modal_container = document.querySelector(".js-modal-container");
+
+function showPopup() {
+  modal.classList.add("open");
+}
+function closePopup() {
+  modal.classList.remove("open");
+}
+closeBtn.addEventListener("click", closePopup);
+for (const mconcept_show of mconcept_shows) {
+  mconcept_show.addEventListener("click", showPopup);
+}
+modal.addEventListener("click", closePopup);
+modal_container.addEventListener("click", closePopup);
