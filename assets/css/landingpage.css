@@ -78,12 +78,13 @@
 }
 .whychooseus .content {
   position: relative;
-  top: -15vh;
+  top: -10vw;
   left: 10vw;
   box-shadow: 0 0 10px black;
   border-radius: 10px;
   background-color: white;
   width: 80vw;
+  height: 15vw;
   z-index: 1 !important;
   display: flex;
   justify-content: space-evenly;
@@ -155,6 +156,7 @@
   margin: 5%;
   padding-left: 2%;
   height: 5%;
+  width: 40vw;
   border-left: 30px solid var(--highlight-color);
 }
 .concept-content h1 {
@@ -164,7 +166,8 @@
 }
 .concept-content p {
   padding: 1%;
-  font-size: 15px;
+  text-align: justify;
+  font-size: 18px;
   color: var(--detail-color);
 }
 /*Project*/
@@ -213,7 +216,7 @@
   width: 23vw;
   height: 25vh;
   object-fit: cover;
-  transition: opacity 1s ease;
+  transition: opacity 1.5s ease;
 }
 
 .project img.hover-image {
@@ -230,7 +233,7 @@
 }
 
 .project.show {
-  animation: fadeIn 1s both;
+  animation: fadeIn 1.5s both;
 }
 .btn-more {
   display: flex;
@@ -273,6 +276,7 @@
 }
 .about .content p {
   color: var(--detail-color);
+  font-size: 18px;
   text-align: justify;
 }
 .about .content hr {

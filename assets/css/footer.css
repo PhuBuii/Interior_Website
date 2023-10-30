@@ -58,6 +58,9 @@
   color: var(--detail-color);
   font-weight: 300;
 }
+.footer_content a:hover {
+  color: black;
+}
 .footer_content ul {
   list-style-type: none;
   padding: 0;

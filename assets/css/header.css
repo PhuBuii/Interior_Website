@@ -3,7 +3,7 @@ header {
   position: fixed;
   width: 100vw;
   background-color: white;
-  padding-top: 20px;
+  padding-top: 1%;
   top: 0;
   left: 0;
   z-index: 999;
@@ -101,7 +101,6 @@ header .navbar li a.marked:hover::after {
 .navbar a:hover,
 .navbar a.active {
   color: rgb(111, 111, 111);
-  font-weight: 600;
 }
 
 header .navbar li:focus-within ul,
@@ -114,7 +113,7 @@ header .navbar li:hover img {
 .navbar .bg_menu_1 {
   position: absolute;
   left: -28.75vw;
-  top: 4.25vh;
+  top: 100%;
   background-color: var(--navbar-menu-color);
   width: 100vw;
 }
@@ -134,7 +133,7 @@ header .navbar li:hover img {
 header .navbar .menu_2 ul,
 header .navbar .menu_3 ul {
   background-color: var(--navbar-menu-color);
-  top: 4.25vh;
+  top: 100%;
   position: absolute;
   width: 250%;
   display: none;
@@ -150,6 +149,6 @@ header .navbar ul li ul li a {
 }
 header .navbar .menu_3 ul {
   width: 100vw;
-  top: 4.25vh;
-  left: -78vw;
+  top: 100%;
+  left: -77.9vw;
 }
