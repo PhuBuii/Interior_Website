@@ -4,6 +4,7 @@
   --highlight-color: #ffe600;
   --navbar-color: #1a1a1a;
   --navbar-menu-color: rgba(68, 68, 68, 0.8);
+  --test: white
 }
 * {
   font-family: "Montserrat", sans-serif;
