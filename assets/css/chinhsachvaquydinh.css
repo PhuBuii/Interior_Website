@@ -18,13 +18,23 @@
     padding: 5%;
     
 }
-.chinhsach_header .content h5{
+.chinhsach_header .content ol li{
     font-weight: 600;
+    margin-bottom: 20px;
 }
-.chinhsach_header .content span{
-    font-weight: 600;
-    padding-left: 3%;
-    font-size: 17px;
+
+.chinhsach_header .content .ol_1 p{
+    margin-left: -26px;
+}
+.chinhsach_header .content .ol_a p{
+    margin-left: -52px;
+}
+.chinhsach_header .content .ol_a ul li{
+    margin-left: -52px;
+}
+.chinhsach_header .content ul li{
+    font-weight: 400;
+    list-style-type: square;
 }
 .chinhsach_header .content table{
     text-align: center;  
@@ -42,9 +52,6 @@
     width: 20vw;
     padding: 10px;
     border: 1px solid black;
-}
-.chinhsach_header .content .content_ul ul{
-    padding-left: 5%;
 }
 .chinhsach_header .content .sign{
     padding-top: 6%;
