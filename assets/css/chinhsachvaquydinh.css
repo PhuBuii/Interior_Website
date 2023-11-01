@@ -1,56 +1,57 @@
 .chinhsach_header {
-    padding-top: 10%;
+  padding-top: 10%;
 }
 .chinhsach_header h1 {
-    position: relative;
-    font-size: 50px;
-    font-weight: 600;
+  position: relative;
+  font-size: 50px;
+  font-weight: 600;
 }
 .chinhsach_header hr {
-    position: relative;
-    top: 4.5vw;
-    left: -2vw;
-    width: 20%;
-    color: yellow;
+  position: relative;
+  top: 4.5vw;
+  left: -2vw;
+  width: 20%;
+  color: yellow;
 }
 .chinhsach_header .content {
-    width: 100vw;
-    padding: 5%;
-    
+  width: 100vw;
+  padding: 5%;
+  background-color: rgba(250, 235, 215, 0.166);
 }
-.chinhsach_header .content h5{
-    font-weight: 600;
+.chinhsach_header .content h5 {
+  font-weight: 600;
 }
-.chinhsach_header .content span{
-    font-weight: 600;
-    padding-left: 3%;
-    font-size: 17px;
+.chinhsach_header .content span {
+  font-weight: 600;
+  padding-left: 3%;
+  font-size: 17px;
 }
-.chinhsach_header .content table{
-    text-align: center;  
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
+.chinhsach_header .content table {
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-.chinhsach_header .content p{
-    font-size: 17px;
+.chinhsach_header .content p {
+  font-size: 17px;
+  text-align: justify;
 }
-.chinhsach_header .content li{
-    font-size: 17px;
+.chinhsach_header .content li {
+  font-size: 17px;
 }
-.chinhsach_header .content td{
-    width: 20vw;
-    padding: 10px;
-    border: 1px solid black;
+.chinhsach_header .content td {
+  width: 20vw;
+  padding: 10px;
+  border: 1px solid black;
 }
-.chinhsach_header .content .content_ul ul{
-    padding-left: 5%;
+.chinhsach_header .content .content_ul ul {
+  padding-left: 5%;
 }
-.chinhsach_header .content .sign{
-    padding-top: 6%;
-    padding-left: 60%;
+.chinhsach_header .content .sign {
+  padding-top: 6%;
+  padding-left: 60%;
 }
-.chinhsach_header .content .sign h6{
-    font-weight: 600;
-    padding-left: 8px;
+.chinhsach_header .content .sign h6 {
+  font-weight: 600;
+  padding-left: 8px;
 }
