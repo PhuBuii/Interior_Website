@@ -156,6 +156,10 @@
   background-color: var(--title-color);
   color: white;
 }
+.package_info-head .content button:hover {
+  background-color: var(--highlight-color);
+  opacity: 0.8;
+}
 .package_info-body .image-container {
   margin-top: 3%;
   width: 100%;
