@@ -67,33 +67,33 @@
   width: 10vw;
   height: 3vw;
 }
-.tuyendung_header .content_2 .content2_01_text button:hover {
+ .content2_01_text button:hover {
   background-color: rgb(180, 156, 119);
 }
-.tuyendung_header .content_2 .next_page {
+ .next_page {
   padding-top: 10%;
 }
-.tuyendung_header .content_2 .next_page ul {
+ .next_page ul {
   display: flex;
   list-style: none;
 
   padding-left: 10px;
 }
-.tuyendung_header .content_2 .next_page ul li {
+ .next_page ul li {
   padding-right: 1%;
 }
-.tuyendung_header .content_2 .next_page ul span {
+ .next_page ul span {
   border: 1px solid black;
   padding: 8px;
   color: black;
 }
-.tuyendung_header .content_2 .next_page a {
+ .next_page a {
   border: 1px solid var(--detail-color);
   padding: 8px;
   color: var(--detail-color);
   text-decoration: none;
 }
-.tuyendung_header .content_2 .next_page a:hover {
+ .next_page a:hover {
   border: 1px solid black;
   color: black;
 }
