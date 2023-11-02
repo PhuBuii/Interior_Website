@@ -83,11 +83,16 @@
 .product-card,
 .product-image {
   position: relative;
+  text-decoration: none;
+  color: black;
+}
+.product-card:hover {
+  color: black;
 }
 
 .product-card .soldout {
   display: block;
-  width: 15vw;
+  width: 100%;
   height: 15vw;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10;
@@ -124,6 +129,7 @@
   justify-content: center;
   width: 3vw;
   height: 3vw;
+  left: 11vw;
   font-weight: 600;
   z-index: 10;
   background-color: var(--highlight-color);
