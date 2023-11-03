@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--Header-->
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <!--Tuyendung-->
+    <link rel="stylesheet" href="../assets/css/tuyendung.css" />
+    <!-- Tuyendung_xemthem -->
+    <link rel="stylesheet" href="../assets/css/tuyendung_xemthem.css" />
+    <!--SlideBar-->
+    <link rel="stylesheet" href="../assets/css/slidebar.css" />
+    <!--Footer-->
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!--Header-->
+    <header>
+      <div class="header_top">
+        <a href="../LandingPage.html"
+          ><img src="../assets/images/navbar/logo.webp" class="logo" alt=""
+        /></a>
+        <div class="header_right">
+          <div class="header_right_search">
+            <i
+              style="font-size: 16px; height: 10px"
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+            <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+          </div>
+          <div class="header_right_icon">
+            <a style="font-size: 20px" href="user.html"
+              ><i class="fa-regular fa-user fa-sm"></i
+            ></a>
+            <a style="font-size: 20px" href="cart.html"
+              ><i class="fa-solid fa-bag-shopping fa-sm"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="active">
+            <a href="gioithieu.html" class="marked">GIỚI THIỆU</a>
+          </li>
+          <li>
+            <a href="sanpham.html" class="marked">SẢN PHẨM</a>
+            <div class="bg_menu_1">
+              <div class="menu_1">
+                <ul>
+                  <li><a href="#">SOFA - sofas</a></li>
+                  <li><a href="#">BÀN - tables</a></li>
+                  <li><a href="#">GHẾ - chairs</a></li>
+                  <li><a href="#">KỆ, TỦ - shelf units, cabinets</a></li>
+                  <li><a href="#">ĐÈN - lamps</a></li>
+                  <li><a href="#">GƯƠNG - mirrors</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">GIƯỜNG - beds</a></li>
+                  <li><a href="#">CHĂN, GA, GỐI - badding</a></li>
+                  <li><a href="#">SẢN PHẨM DỆT MAY - home textitle</a></li>
+                  <li><a href="#">TRANG TRÍ - decorations</a></li>
+                  <li><a href="#">ĐỒ GIA DỤNG - household goods</a></li>
+                  <li><a href="#">ẤN PHẨM - publications</a></li>
+                  <li><a href="#">BỘ SƯU TẬP - collections</a></li>
+                </ul>
+                <img
+                  src="../assets/images/navbar/image_menu_products.webp"
+                  alt=""
+                  style="
+                    width: 30vw;
+                    height: 40vh;
+                    margin-bottom: 2%;
+                    margin-left: 10%;
+                  "
+                />
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="./MConcept.html" class="marked">M.CONCEPT</a>
+            <div class="menu_2">
+              <ul>
+                <li><a href="./MConcept.html">ĐỘC LẬP Concept</a></li>
+                <li><a href="./MConcept.html">SAGO Concept</a></li>
+                <li>
+                  <a href="./MConcept.html">DALAT GRACE Concept</a>
+                </li>
+                <li><a href="./MConcept.html">QUADA Concept</a></li>
+                <li><a href="./MConcept.html">JOHY Concept</a></li>
+                <li><a href="./MConcept.html">HANO Concept</a></li>
+                <li><a href="./MConcept.html">EZ Concept</a></li>
+                <li>
+                  <a href="./MConcept.html">EZ TINY CONCEPT Concept</a>
+                </li>
+                <li><a href="./MConcept.html">DALAT Concept</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="tktc.html" class="marked">THIẾT KẾ & THI CÔNG</a></li>
+          <li>
+            <a href="tintuc.html" class="marked">TIN TỨC</a>
+            <div class="menu_2">
+              <ul>
+                <li><a href="#">KÉO GHẾ RA NGỒI</a></li>
+                <li><a href="#">TỐI GIẢN "MỘT" CHÚT</a></li>
+                <li><a href="#">ƯU ĐÃI THÀNH VIÊN</a></li>
+                <li><a href="#">BỐN CHÂN TIẾP SỨC</a></li>
+                <li><a href="#">CÔNG TRÌNH THỰC TẾ</a></li>
+                <li><a href="#">HOME TIPS</a></li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">TUYỂN DỤNG</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="uudai.html" class="marked">ƯU ĐÃI</a>
+            <div class="menu_3">
+              <ul>
+                <li>
+                  <img
+                    src="../assets/images/navbar/image_menu_promotion.webp"
+                    alt=""
+                    style="width: 40vw; padding: 20px 150px"
+                  />
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Tuyển dụng Content-->
+    <div class="tuyendung_header container">
+      <hr size="30px" color="yellow" />
+      <h1>Tin tức</h1>
+      <div class="flex">
+        <div class="content">
+          <div class="content_1">
+            <h4 style="margin-top: 0">Bài viết</h4>
+            <h4>Intagram</h4>
+            <div class="grid-container">
+              <img src="../assets/images/Tuyendung/6.jpg" alt="" />
+              <img src="../assets/images/Tuyendung/1.jpg" alt="" />
+              <img src="../assets/images/Tuyendung/2.jpg" alt="" />
+              <img src="../assets/images/Tuyendung/3.jpg" alt="" />
+              <img src="../assets/images/Tuyendung/4.jpg" alt="" />
+              <img src="../assets/images/Tuyendung/5.jpg" alt="" />
+              <img src="../assets/images/Tuyendung/7.jpg" alt="" />
+              <img src="../assets/images/Tuyendung/8.jpg" alt="" />
+            </div>
+            <h4>Bài viết gần đây</h4>
+            <div>
+              <p>Free 3D & Giảm 10% tất cả concept</p>
+              <p>SHARING & LOVING - Món quà nhỏ, niềm vui lớn</p>
+              <p>DOODLE DEAL - Up to 60% all items</p>
+              <p>Tiktok Challenge - "Ở Nhà Lạ Vui!"</p>
+              <p>Miễn phí vận chuyển cho tất cả đơn hàng từ 0đ!</p>
+            </div>
+          </div>
+          <div class="content_2">
+            <div class="content_2_text">
+              <h1>[TUYỂN DỤNG] BẠN CÓ YÊU NHÀ KHÔNG?</h1>
+              <p style="color: var(--detail-color); font-size: 12px">
+                <b>Đăng bởi</b> Home Make MY | Tháng 5 31, 2023 | 0 bình luận
+              </p>
+              <p>
+                Đó sẽ là câu hỏi mà Make My Home luôn đặt ra trong mọi buổi gặp
+                gỡ ứng viên. Tụi mình tin rằng, chỉ khi có tình yêu đủ lớn với
+                nhà cửa, nội thất, với không gian sống đẹp, bạn mới có thể lan
+                toả đến người khác, dù trong cuộc sống hay công việc. Nhân tiện,
+                nếu bạn yêu nhà và cũng đang tìm kiếm một công việc mới ở các vị
+              </p>
+              <p>
+                Nhân tiện, nếu bạn yêu nhà và cũng đang tìm kiếm một công việc
+                mới ở các vị trí bên dưới, apply để mình sớm "về chung một nhà"
+                nhé.
+              </p>
+              <div class="img-container">
+                <img src="../assets/images/Tuyendung/h5.png" alt="" />
+              </div>
+              <p><span>MARRKETING</span></p>
+              <ul>
+                <li>Marketing Executive: https://bit.ly/3C5pxjY</li>
+                <li>Content Writer: https://bit.ly/3C3Xf9f</li>
+                <li>Visual Assistant: https://bit.ly/3MDliAZ</li>
+              </ul>
+              <p><span>PROJECT</span></p>
+              <ul>
+                <li>Quản lý dự án: https://bit.ly/3K4MozL</li>
+                <li>Giám sát công trình: https://bit.ly/40vWoJi</li>
+              </ul>
+              <p><span>WOODSHOP</span></p>
+              <ul>
+                <li>Kế toán kho: https://bit.ly/3Zzcuk7</li>
+              </ul>
+              <p>
+                Gửi CV/Portfolio của bạn qua email: hr@makemyhomevn.com để Nhà
+                cùng biết rõ hơn về bạn và sắp xếp lịch hẹn trao đổi nhé!
+              </p>
+              <p>
+                *Lưu ý: Tip để "đậu ngay từ vòng gửi xe", đừng ngại thể hiện
+                tình yêu nhà của bạn dưới bất cứ hình thức nào, đó sẽ là một
+                "điểm cộng" lớn đó nhe!
+              </p>
+              <hr
+                style="border: none; border-top: 3px dashed #000; width: 100px"
+              />
+              <ul style="padding-left: 15px; padding-bottom: 20px">
+                <li>Tối Giản Một Chút Cùng Make My Home</li>
+                <li>http://makemyhomevn.com</li>
+                <li>97 - 99 Cộng Hòa, w4, Tân Bình, HCMC</li>
+                <li>028 6267 6466</li>
+              </ul>
+              <hr style="color: black; width: 50%" />
+            </div>
+<<<<<<< Updated upstream
+
+            <div class="comment">
+              <div class="header">
+                <h4 style="margin-top: 15%">VIẾT MỘT BÌNH LUẬN</h4>
+                <ul>
+                  <li>Chia sẻ:</li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-pinterest fa-2xl"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <table>
+                <tr>
+                  <td><input type="text" placeholder="Tên bạn" /></td>
+                  <td style="padding-left: 2%">
+                    <input type="email" placeholder="your@email.com" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input
+                      style="width: 100%"
+                      type="text"
+                      placeholder="Website"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <textarea name="" id="" cols="140" rows="10"></textarea>
+                  </td>
+                </tr>
+              </table>
+              <button>ĐĂNG BÌNH LUẬN</button>
+=======
+            <div class="carousel-item">
+              <a href="" class="slidebar">
+                <img
+                  src="../assets/images/slider/slider_5.webp"
+                  class="d-block w-25 slider"
+                  alt="..."
+                />
+                <img
+                  src="../assets/images/slider/slider_6.webp"
+                  class="d-block w-25 slider"
+                  alt="..."
+                />
+                <img
+                  src="../assets/images/slider/slider_7.webp"
+                  class="d-block w-25 slider"
+                  alt="..."
+                />
+                <img
+                  src="../assets/images/slider/slider_8.jpg"
+                  class="d-block w-25 slider"
+                  alt="..."
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="" class="slidebar">
+                <img
+                  src="../assets/images/slider/slider_9.webp"
+                  class="d-block w-25 slider"
+                  alt="..."
+                />
+                <img
+                  src="../assets/images/slider/slider_10.webp"
+                  class="d-block w-25 slider"
+                  alt="..."
+                />
+                <img
+                  src="../assets/images/slider/slider_11.webp"
+                  class="d-block w-25 slider"
+                  alt="..."
+                />
+                <img
+                  src="../assets/images/slider/slider_12.webp"
+                  class="d-block w-25 slider"
+                  alt="..."
+                />
+              </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#ShareContent"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#ShareContent"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+ 
+  
+      
+      <!--Footer-->
+      <footer>
+        <div class="container footer_container">
+          <div class="footer_content">
+            <h3 class="title">Thông tin về Nhà</h3>
+            <ul>
+              <li><a href="./Lienhe.html">LIÊN HỆ</a></li>
+              <li><a href="./Tuyendung1.html">TUYỂN DỤNG</a></li>
+            </ul>
+          </div>
+          <div class="footer_content">
+            <h3 class="title">Sản phẩm</h3>
+            <ul>
+              <li><a href="">SẢN PHẨM NOEL</a></li>
+              <li><a href="">BÀN - tables</a></li>
+              <li><a href="">GIƯỜNG - beds</a></li>
+              <li><a href="">SOFA - sofas</a></li>
+              <li><a href="">CHĂN, GA, GỐI- bedding</a></li>
+              <li><a href="">ĐỒ GIA DỤNG - household goods</a></li>
+              <li><a href="">KỆ, TỦ - shelf units, cabinets</a></li>
+              <li><a href="">Đèn - lamps</a></li>
+              <li><a href="">GƯƠNG - mirrors</a></li>
+              <li><a href="">SẢN PHẨM DỆT MAY - home texttile</a></li>
+              <li><a href="">ẤN PHẨM - publications</a></li>
+              <li><a href="">GHẾ - chairs</a></li>
+              <li><a href="">TRANG TRÍ - decorations</a></li>
+              <li><a href="">BỘ SƯU TẬP - COLLECTIONS</a></li>
+            </ul>
+          </div>
+          <div class="footer_content">
+            <h3 class="title">Chính sách</h3>
+            <ul>
+              <li><a href="./chinhsachvaquydinh.html">Chính sách và quy định</a></li>
+              <li><a href="./baomat.html">Bảo mật</a></li>
+              <li><a href="./Lienhe.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="footer_content">
+            <h3 class="title">Liên hệ</h3>
+            <p>Công ty TNHH Kiến trúc và Nội thất Make My Home</p>
+            <p>GPĐKKD số 0314329518 do Sở KHĐT TP.HCM cấp ngày 03/04/2017</p>
+            <p>
+              CỬA HÀNG &amp; VĂN PHÒNG: 90-92 Đường B2, Khu đô thị Sala, An Lợi
+              Đông, Thủ Đức, HCM
+            </p>
+            <p>ĐIỆN THOẠI: 028 6267 6466 - 0866757758</p>
+            <p>EMAIL: support@makemyhomevn.com</p>
+            <div class="footer_icon">
+              <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a
+              ><a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest fa-2xl"></i></a>
+              <a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a>
+>>>>>>> Stashed changes
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Share Content-->
+    <div class="container share">
+      <h3><a href="./shareMoment.html">Chia sẻ khoảnh khắc </a></h3>
+      <div
+        id="ShareContent"
+        class="carousel slide share_container"
+        data-bs-touch="false"
+        data-bs-interval="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="./shareMoment.html" class="slidebar">
+              <img
+                src="../assets/images/slider/slider_1.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_2.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_3.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_4.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="./shareMoment.html" class="slidebar">
+              <img
+                src="../assets/images/slider/slider_5.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_6.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_7.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_8.jpg"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="./shareMoment.html" class="slidebar">
+              <img
+                src="../assets/images/slider/slider_9.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_10.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_11.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+              <img
+                src="../assets/images/slider/slider_12.webp"
+                class="d-block w-25 slider"
+                alt="..."
+              />
+            </a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#ShareContent"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#ShareContent"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer>
+      <div class="container footer_container">
+        <div class="footer_content">
+          <h3 class="title">Thông tin về Nhà</h3>
+          <ul>
+            <li><a href="./Lienhe.html">LIÊN HỆ</a></li>
+            <li><a href="./Tuyendung1.html">TUYỂN DỤNG</a></li>
+          </ul>
+        </div>
+        <div class="footer_content">
+          <h3 class="title">Sản phẩm</h3>
+          <ul>
+            <li><a href="">SẢN PHẨM NOEL</a></li>
+            <li><a href="">BÀN - tables</a></li>
+            <li><a href="">GIƯỜNG - beds</a></li>
+            <li><a href="">SOFA - sofas</a></li>
+            <li><a href="">CHĂN, GA, GỐI- bedding</a></li>
+            <li><a href="">ĐỒ GIA DỤNG - household goods</a></li>
+            <li><a href="">KỆ, TỦ - shelf units, cabinets</a></li>
+            <li><a href="">Đèn - lamps</a></li>
+            <li><a href="">GƯƠNG - mirrors</a></li>
+            <li><a href="">SẢN PHẨM DỆT MAY - home texttile</a></li>
+            <li><a href="">ẤN PHẨM - publications</a></li>
+            <li><a href="">GHẾ - chairs</a></li>
+            <li><a href="">TRANG TRÍ - decorations</a></li>
+            <li><a href="">BỘ SƯU TẬP - COLLECTIONS</a></li>
+          </ul>
+        </div>
+        <div class="footer_content">
+          <h3 class="title">Chính sách</h3>
+          <ul>
+            <li>
+              <a href="./chinhsachvaquydinh.html">Chính sách và quy định</a>
+            </li>
+            <li><a href="">Bảo mật</a></li>
+            <li><a href="./Lienhe.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer_content">
+          <h3 class="title">Liên hệ</h3>
+          <p>Công ty TNHH Kiến trúc và Nội thất Make My Home</p>
+          <p>GPĐKKD số 0314329518 do Sở KHĐT TP.HCM cấp ngày 03/04/2017</p>
+          <p>
+            CỬA HÀNG &amp; VĂN PHÒNG: 90-92 Đường B2, Khu đô thị Sala, An Lợi
+            Đông, Thủ Đức, HCM
+          </p>
+          <p>ĐIỆN THOẠI: 028 6267 6466 - 0866757758</p>
+          <p>EMAIL: support@makemyhomevn.com</p>
+          <div class="footer_icon">
+            <a
+              href="https://www.facebook.com/makemyhomevn/?ref=aymt_homepage_panel"
+              ><i class="fa-brands fa-facebook fa-2xl"></i></a
+            ><a href="https://www.instagram.com/makemyhomevn/?hl=en"
+              ><i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+            <a href="https://www.pinterest.com/makemyhomevn/"
+              ><i class="fa-brands fa-pinterest fa-2xl"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UC4mYFbip0Jb0lMXNcupaF0A"
+              ><i class="fa-brands fa-youtube fa-2xl"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
