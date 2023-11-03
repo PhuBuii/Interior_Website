@@ -170,6 +170,17 @@
   font-size: 18px;
   color: var(--detail-color);
 }
+.concept-content a {
+  padding: 1%;
+  font-size: 15px;
+  color: var(--detail-color);
+  position: relative;
+  left: 80%;
+}
+.concept-content a:hover {
+  color: var(--highlight-color);
+}
+
 /*Project*/
 .project-content h3 {
   font-size: 27px;
