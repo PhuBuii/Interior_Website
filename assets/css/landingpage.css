@@ -325,20 +325,34 @@
 }
 .modal-close {
   position: relative;
-  left: 95%;
-  top: 2%;
+  display: flex;
+  justify-content: space-between;
   padding: 12px;
   cursor: pointer;
   opacity: 0.9;
 }
-.modal-close:hover {
+.modal-close h2 {
+  position: relative;
+  font-weight: 300;
+  top: -10px;
+}
+.modal-close i {
+  position: absolute;
+  left: 97%;
+  top: 30%;
+}
+.modal-close i:hover {
   color: var(--highlight-color);
 }
 
 .video-container {
   position: relative;
-  left: 5%;
-  height: 100%;
+  left: 2.5%;
+  top: -5%;
+}
+.video-container iframe {
+  box-shadow: 0 0 5px black;
+  height: 45vh;
 }
 @keyframes modalOpacity {
   from {
