@@ -17,19 +17,21 @@
   border-left: 10px solid var(--highlight-color);
 }
 .share_container {
-  width: 70vw;
+  width: 73vw;
 }
 .footer_container {
   margin-top: 5%;
   display: flex;
-  width: 80vw;
-  justify-content: space-evenly;
+  width: 60vw;
+  justify-content: space-between;
 }
 .footer_content {
-  flex: 0 0 18%;
+  width: 25%;
 }
-.footer_content > p {
+.footer_content > p,
+.footer_content a {
   color: var(--detail-color);
+  font-size: 15px;
 }
 .title {
   font-size: 17px;

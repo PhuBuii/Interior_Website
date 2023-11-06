@@ -8,8 +8,8 @@
   width: 95%;
 }
 .header_1 .content {
-  width: 20%;
-  padding-top: 13%;
+  width: 30%;
+  padding-top: 11.5%;
 }
 .header_1 .content h1 {
   font-weight: 600;
@@ -37,10 +37,10 @@
   gap: 10%;
 }
 .content .img-grid img {
-  width: 10vw;
+  width: 11vw;
 }
 .header_2 {
-  margin-top: 3%;
+  margin-top: 5%;
 }
 .header_2 .content {
   width: 60%;
@@ -64,11 +64,11 @@
   color: var(--title-color);
 }
 .header_2 .image-container {
-  width: 35%;
-  margin-left: 5%;
+  width: 40%;
+  margin-left: 6%;
 }
 .header_2 .image-container img {
-  width: 100%;
+  width: 105%;
   box-shadow: 0 0 10px black;
 }
 

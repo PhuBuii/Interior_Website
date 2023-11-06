@@ -64,14 +64,14 @@
 .session_1 {
   display: flex;
 }
-.session_1 .session_1-left,
-.session_1 .session_1-right {
-  width: 50%;
+.session_1 .session_1-left {
+  width: 55%;
 }
 .session_1 .session_1-left img {
-  width: 100%;
+  width: 105%;
 }
 .session_1 .session_1-right {
+  width: 45%;
   padding: 0 5%;
   display: grid;
   grid-template-columns: 18vw 18vw;
@@ -157,7 +157,7 @@
 .session_2 {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  padding: 0 6%;
+  padding: 0 10%;
   margin-left: 5vw;
 }
 .session_2 .product-card {
