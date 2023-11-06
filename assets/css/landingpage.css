@@ -56,7 +56,7 @@
 
 .whychooseus .bg {
   padding: 14rem 0;
-  background: url(../images/landingpage/WhyChooseUs/bg_1.jpeg) no-repeat scroll
+  background: url(../images/landingpage/WhyChooseUs/bg_2.jpeg) no-repeat scroll
     center center;
   background-size: cover;
   position: relative;
@@ -68,13 +68,19 @@
 }
 .bg .container h1 {
   color: var(--highlight-color);
-  text-shadow: 0 0 10px rgb(130, 130, 130);
+  text-shadow: 0 0 5px rgb(130, 130, 130);
   font-size: 50px;
   font-weight: 600;
+  position: relative;
+  top: -5vh;
 }
 .bg .container h5 {
-  font-size: 20px;
-  text-shadow: 0 0 10px rgb(130, 130, 130);
+  font-size: 25px;
+  color: rgb(241, 249, 255);
+  font-weight: 600;
+  text-shadow: 0 0 5px rgb(130, 130, 130);
+  position: relative;
+  top: -5vh;
 }
 .whychooseus .content {
   position: relative;
@@ -82,7 +88,7 @@
   left: 10vw;
   box-shadow: 0 0 10px black;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   width: 80vw;
   height: 15vw;
   z-index: 1 !important;
@@ -121,7 +127,6 @@
 }
 #M-concept {
   width: 40vw;
-  margin: 5% 10%;
 }
 
 #M-concept img,
@@ -154,16 +159,15 @@
 .concept-content {
   position: relative;
   left: 5%;
-  margin: 5%;
-  padding-left: 2%;
-  height: 5%;
-  width: 40vw;
+  padding: 0 1.5%;
+  height: 243px;
+  width: 45%;
   border-left: 30px solid var(--highlight-color);
 }
 .concept-content h1 {
   margin-bottom: 2%;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 20px;
 }
 .concept-content p {
   padding: 1%;
@@ -190,15 +194,20 @@
   padding-left: 10px;
 }
 .filter-bar {
+  position: relative;
   text-align: center;
   margin: 20px;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
 .filter-button {
   font-size: 15px;
-  margin: 5px;
+  margin: 0.5%;
   padding: 1%;
   width: 10vw;
   border-radius: 10px;
+  border: none;
   background-color: rgba(255, 255, 255, 0);
   border: none;
 }
@@ -206,8 +215,6 @@
 .filter-button.active {
   background-color: var(--highlight-color);
   font-weight: 600;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
 }
 .project-grid {
   display: grid;
@@ -222,6 +229,7 @@
   transition: transform 0.5s ease;
   width: 23vw;
   height: 25vh;
+  margin: 2% 0;
 }
 
 .project img {
@@ -256,10 +264,13 @@
 .btn-more button {
   background-color: var(--highlight-color);
   border-radius: 10px;
+  border: none;
+
   padding: 1% 5%;
 }
 .btn-more button:hover {
   font-weight: 600;
+  box-shadow: 5px 5px 0.5px black;
 }
 @keyframes fadeIn {
   from {
@@ -289,6 +300,7 @@
 .about .content p {
   color: var(--detail-color);
   font-size: 18px;
+  line-height: 30px;
   text-align: justify;
 }
 .about .content hr {
@@ -334,7 +346,7 @@
 }
 .modal-close h2 {
   position: relative;
-  font-weight: 300;
+  font-weight: 600;
   top: -10px;
 }
 .modal-close i {

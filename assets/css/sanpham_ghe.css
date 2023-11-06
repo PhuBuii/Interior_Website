@@ -5,10 +5,10 @@
   color: var(--detail-color);
 }
 .banner img {
-  width: 90vw;
+  width: 80vw;
   height: 45vw;
   position: relative;
-  left: -6.5%;
+  left: -1.5%;
 }
 .color-box {
   display: inline-block;
@@ -24,10 +24,12 @@
   text-align: center;
   display: flex;
   margin: 20px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 .filter-button {
   font-size: 15px;
-  margin: 5px;
+  margin: 8px;
   padding: 1%;
   width: 10vw;
   border-radius: 10px;
@@ -50,7 +52,7 @@
 }
 .product-card .soldout {
   display: block;
-  width: 100%;
+  width: 15vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10;
@@ -147,12 +149,12 @@
 /* CSS cho thông báo không tìm thấy kết quả */
 .no-results {
   display: none;
-  font-size: 25px;
+  font-size: 15px;
   position: relative;
-  left: 22vw;
+  left: 25vw;
 }
 .no-results span {
-  font-size: 25px;
+  font-size: 15px;
 }
 .product-card,
 .product-card:hover {
@@ -165,7 +167,9 @@
 }
 .product-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  left: 3%;
 }
 
 @keyframes fadeIn {
@@ -177,4 +181,19 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+#load-more-button {
+  background-color: var(--highlight-color);
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  padding: 1% 5%;
+  position: relative;
+  left: 43%;
+}
+#load-more-button:hover {
+  opacity: 0.9;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

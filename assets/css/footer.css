@@ -3,7 +3,7 @@
   margin: auto;
   margin-top: 5%;
   position: relative;
-  left: 5%;
+  left: 3%;
 }
 .share > h3 > a {
   text-decoration: none;
@@ -17,7 +17,7 @@
   border-left: 10px solid var(--highlight-color);
 }
 .share_container {
-  width: 60vw;
+  width: 70vw;
 }
 .footer_container {
   margin-top: 5%;
