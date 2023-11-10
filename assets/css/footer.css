@@ -3,7 +3,6 @@
   margin: auto;
   margin-top: 5%;
   position: relative;
-  left: 5%;
 }
 .share > h3 > a {
   text-decoration: none;
@@ -17,21 +16,20 @@
   border-left: 10px solid var(--highlight-color);
 }
 .share_container {
-  width: 60vw;
+  width: 78vw;
 }
-
-/*Footer*/
 .footer_container {
   margin-top: 5%;
   display: flex;
-  width: 80vw;
-  justify-content: space-evenly;
+  position: relative;
 }
 .footer_content {
-  flex: 0 0 18%;
+  width: 25%;
 }
-.footer_content > p {
+.footer_content > p,
+.footer_content a {
   color: var(--detail-color);
+  font-size: 15px;
 }
 .title {
   font-size: 17px;

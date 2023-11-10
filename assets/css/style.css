@@ -13,10 +13,19 @@
   letter-spacing: 0.25px;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   margin: 0 auto;
 }
 
 .flex {
   display: flex;
+}
+p,
+b,
+li,
+a {
+  font-size: 16px;
 }

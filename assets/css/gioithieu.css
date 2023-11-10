@@ -40,7 +40,7 @@
 }
 .gioithieu_header .content p {
   text-align: justify;
-  font-size: 15px;
+  font-size: 17px;
   color: var(--detail-color);
   margin: 5% 1%;
 }
@@ -52,9 +52,9 @@
   height: 60vh;
   opacity: 0;
 }
-.gioithieu_body {
+.gioithieu_body,
+.cotloi {
   padding: 4% 0;
-  justify-content: space-evenly;
   border-bottom: 1px solid var(--detail-color);
 }
 .gioithieu_body .item,
@@ -65,16 +65,18 @@
   align-items: center;
   width: 25vw;
 }
+
 .gioithieu_body .item img,
 .gioithieu_body .item h1,
 .gioithieu_body .item p,
 .cotloi_body .item h1,
 .cotloi_body .item p {
   color: var(--title-color);
+  font-size: 16px;
   margin-bottom: 5%;
 }
 .gioithieu_body .item img {
-  width: 10vw;
+  width: 12vw;
 }
 .gioithieu_body .item p {
   text-align: justify;
@@ -100,10 +102,6 @@
   transform: scale(1.2);
 }
 
-.cotloi {
-  padding: 4% 0;
-  border-bottom: 1px solid var(--detail-color);
-}
 .cotloi h1 {
   text-align: center;
   font-size: 45px;
@@ -111,18 +109,26 @@
   font-weight: 600;
   margin-bottom: 4%;
 }
-.cotloi_body .item p {
+.cotloi_body .item p,
+.gioithieu_body .item p {
   text-align: justify;
   color: var(--detail-color);
   width: 80%;
   height: 10vh;
 }
 .location {
-  padding-top: 5%;
+  margin-top: 5%;
   justify-content: space-around;
 }
 .location .content {
-  padding-left: 5%;
+  width: 50%;
+  margin: 0;
+}
+.location .content p,
+.location .content b,
+.location .content li {
+  text-align: justify;
+  font-size: 16px;
 }
 .location h1 {
   margin: 1%;
