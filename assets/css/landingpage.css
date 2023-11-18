@@ -123,6 +123,7 @@
 .concept {
   display: flex;
   position: relative;
+  margin-top: 3%;
   top: -10vh;
 }
 #M-concept {
@@ -198,7 +199,6 @@
   text-align: center;
   margin: 20px;
   width: 95%;
-  border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
 .filter-button {
