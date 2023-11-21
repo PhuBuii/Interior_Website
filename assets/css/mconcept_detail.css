@@ -66,6 +66,7 @@
 .header_2 .image-container {
   width: 40%;
   margin-left: 6%;
+  border-radius: 10px;
 }
 .header_2 .image-container img {
   width: 105%;

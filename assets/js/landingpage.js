@@ -1,3 +1,40 @@
+//Slide show
+// Tạo một div với lớp "carousel-inner"
+const carouselInner = document.createElement("div");
+carouselInner.className = "carousel-inner";
+
+// Danh sách các hình ảnh
+const imageSources = [
+  "../assets/images/landingpage/slideshow/img_slider_2.webp",
+  "../assets/images/landingpage/slideshow/img_slider_3.webp",
+  "../assets/images/landingpage/slideshow/img_slider_4.webp",
+  "../assets/images/landingpage/slideshow/img_slider_5.webp",
+  "../assets/images/landingpage/slideshow/img_slider_6.webp",
+];
+
+// Tạo các phần tử item cho carousel
+for (let i = 0; i < imageSources.length; i++) {
+  const item = document.createElement("div");
+  item.className = "carousel-item";
+  if (i === 0) {
+    item.className += " active";
+  }
+
+  const img = document.createElement("img");
+  img.src = imageSources[i];
+  img.className = "d-block w-100";
+  img.alt = "...";
+
+  item.appendChild(img);
+  carouselInner.appendChild(item);
+}
+
+// Thêm "carousel-inner" vào div chứa carousel (có id là "Slideshow")
+const slideshowContainer = document.getElementById("Slideshow");
+slideshowContainer.appendChild(carouselInner);
+//Category
+// Create and add the category carousel
+
 // filter
 document.addEventListener("DOMContentLoaded", function () {
   const filterButtons = document.querySelectorAll(".filter-button");

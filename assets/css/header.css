@@ -100,6 +100,11 @@ header .navbar li a::after {
   transition: transform 0.3s ease-in-out;
   transform-origin: right;
 }
+header .navbar .menu_1 ul li a::after,
+header .navbar .menu_2 ul li a::after,
+header .navbar .menu_3 ul li a::after {
+  width: 0;
+}
 header .navbar li a:hover:after {
   transform: scale(1);
   transform-origin: left;
