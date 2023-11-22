@@ -80,7 +80,9 @@
   width: 25%;
   margin-bottom: 5%;
 }
-.product-card,
+.product-card {
+  position: relative;
+}
 .product-image {
   position: relative;
 }
