@@ -78,18 +78,18 @@ const closeBtn = document.querySelector(".js-close-btn");
 const modal = document.querySelector(".js-modal");
 const modal_container = document.querySelector(".js-modal-container");
 
-function showPopup() {
+function showVideoPopup() {
   modal.classList.add("open");
 }
-function closePopup() {
+function closeVideoPopup() {
   modal.classList.remove("open");
 }
-closeBtn.addEventListener("click", closePopup);
+closeBtn.addEventListener("click", closeVideoPopup);
 for (const mconcept_show of mconcept_shows) {
-  mconcept_show.addEventListener("click", showPopup);
+  mconcept_show.addEventListener("click", showVideoPopup);
 }
-modal.addEventListener("click", closePopup);
-modal_container.addEventListener("click", closePopup);
+modal.addEventListener("click", closeVideoPopup);
+modal_container.addEventListener("click", closeVideoPopup);
 
 // Khởi tạo Swiper với hiệu ứng parallax
 var swiper = new Swiper(".mySwiper", {
