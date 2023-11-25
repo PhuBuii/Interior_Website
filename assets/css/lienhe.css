@@ -18,6 +18,7 @@
   padding: 5%;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(250, 235, 215, 0.2);
 }
 .lienhe_header .content_1 {
   padding-right: 8%;
@@ -29,12 +30,13 @@
   padding-left: 5%;
 }
 .lienhe_header .content_1 input {
-  width: 18vw;
+  width: 98%;
+  border: 1px solid black;
   padding: 10px;
 }
 .lienhe_header .content_1 textarea {
   padding: 2%;
-  width: 40vw;
+  width: 100%;
 }
 .lienhe_header .content_1 button {
   width: 8vw;

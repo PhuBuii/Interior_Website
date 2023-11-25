@@ -225,8 +225,10 @@ p {
 
 .cacduan .row .item {
   width: 49%;
-  box-shadow: 2px 2px 4px var(--detail-color);
   padding: 0;
+}
+.cacduan .row .item:hover {
+  box-shadow: 0px 0px 5px var(--detail-color);
 }
 .cacduan .row .item a {
   text-decoration: none;

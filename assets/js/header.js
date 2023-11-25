@@ -63,3 +63,11 @@ function closeLoginPopUp(event) {
 function flip() {
   document.querySelector("#flipper").classList.toggle("flip");
 }
+
+//add to cart
+function addItem(event) {
+  alert("Bạn đã nhấn nút");
+  if (event) {
+    event.preventDefault();
+  }
+}

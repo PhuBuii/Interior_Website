@@ -45,7 +45,7 @@
   margin-top: 5%;
 }
 .sanpham_newrelease h1 {
-  padding-left: 10vw;
+  padding-left: 10%;
   font-weight: 600;
   position: relative;
   margin-bottom: 3%;
@@ -65,13 +65,14 @@
   display: flex;
 }
 .session_1 .session_1-left {
-  width: 55%;
+  width: 50%;
 }
 .session_1 .session_1-left img {
-  width: 105%;
+  width: 100%;
+  height: 100%;
 }
 .session_1 .session_1-right {
-  width: 45%;
+  width: 50%;
   padding: 0 5%;
   display: grid;
   grid-template-columns: 18vw 18vw;
@@ -80,10 +81,12 @@
   width: 25%;
   margin-bottom: 5%;
 }
-.product-card {
-  position: relative;
+.session_1 .session_1-right #add-cart {
+  left: 280%;
 }
-.product-image {
+.product-card,
+.product-image,
+.product-details {
   position: relative;
 }
 .product-card .soldout {
@@ -162,6 +165,9 @@
   padding: 0 10%;
   margin-left: 5vw;
 }
+.session_2 #add-cart {
+  left: 78%;
+}
 .session_2 .product-card {
   margin-bottom: 4.2%;
 }
@@ -169,12 +175,13 @@
   object-fit: cover;
   transition: opacity 0.8s ease;
 }
-.product-image img.hover-image {
+.product-image .hover-image {
   position: absolute;
-  top: 0vw;
-  left: 0vw;
+  left: 0;
+  top: 0;
   opacity: 0;
 }
+
 .product-image:hover .original-image {
   opacity: 0;
 }
@@ -182,6 +189,7 @@
 .product-image:hover .soldout {
   opacity: 1;
 }
+
 .product_slide-container .product-card {
   margin: 0 2.5%;
 }
@@ -194,4 +202,17 @@
 .product-card:hover {
   text-decoration: none;
   color: black;
+}
+.product-card .product-details #add-cart {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 0.8s ease;
+}
+
+.product-card:hover .product-details #add-cart {
+  opacity: 1;
 }
