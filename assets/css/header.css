@@ -459,3 +459,6 @@ header .navbar .menu_3 ul {
 .userPopup p#logout {
   color: red;
 }
+#user-popup-container a{
+  text-decoration: none;
+}
