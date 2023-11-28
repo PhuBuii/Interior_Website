@@ -12,7 +12,7 @@
     <div class="header_right_icon">
       <a id="user">
         <i class="fa-regular fa-user fa-sm" onclick="showPopup()"></i>
-        <p id="username_show"></p>
+        <p id="username_show" onclick="showUserPopup()"></p>
       </a>
 
       <a
@@ -139,9 +139,13 @@
                 ></a>
               </div>
               <span>or use your email for registration</span>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
+              <input type="text" placeholder="Name" id="username-signup" />
+              <input type="email" placeholder="Email" id="email-signup" />
+              <input
+                type="password"
+                placeholder="Password"
+                id="password-signup"
+              />
               <button onclick="signup()">Sign Up</button>
             </form>
           </div>
@@ -208,3 +212,11 @@
 </div>
 
 <div id="cartPopup" class="cartPopup" onclick="closeCartPopUp(event)"></div>
+<div id="userPopup" class="userPopup" onclick="closeUserPopUp(event)">
+  <div id="user-popup-container">
+    <p>Thông tin cá nhân</p>
+    <p>Lịch sử đơn hàng</p>
+    <hr />
+    <p id="logout" onclick="logout()">Đăng xuất</p>
+  </div>
+</div>
