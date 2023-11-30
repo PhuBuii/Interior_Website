@@ -15,8 +15,9 @@
         <p id="username_show"></p>
       </a>
       <a
-        ><i class="fa-solid fa-bag-shopping fa-sm" onclick="showCartPopup()"></i
-      ></a>
+        ><i class="fa-solid fa-bag-shopping fa-sm" id="cart_show"></i>
+        <span id="cart-count">0</span></a
+      >
     </div>
   </div>
 </div>
@@ -210,7 +211,12 @@
   </div>
 </div>
 
-<div id="cartPopup" class="cartPopup" onclick="closeCartPopUp(event)"></div>
+<div id="cart-dropdown" class="cart-dropdown">
+  <ul id="cart-items"></ul>
+  <div id="cart-total">Total: $0.00</div>
+  <button onclick="checkout()">Checkout</button>
+</div>
+
 <div id="userPopup" class="userPopup" onclick="closeUserPopUp(event)">
   <div id="user-popup-container">
     <p><a href="./user-info.html">Thông tin cá nhân</a></p>

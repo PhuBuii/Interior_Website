@@ -459,6 +459,55 @@ header .navbar .menu_3 ul {
 .userPopup p#logout {
   color: red;
 }
-#user-popup-container a{
+#user-popup-container a {
   text-decoration: none;
+}
+.cart-dropdown {
+  display: none;
+  position: absolute;
+  top: 8vh;
+  right: 9vw;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cart-dropdown ul {
+  list-style-type: none;
+}
+
+.cart-dropdown li {
+  margin-bottom: 10px;
+}
+
+#cart-count {
+  box-shadow: 0 0 1px black;
+  color: black;
+  border-radius: 50%;
+  width: 0.8vw;
+  height: 0.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  position: absolute;
+  top: 1.5vh;
+  left: 1.5vw;
+}
+#cart-items li {
+  display: flex;
+  height: 7vh;
+}
+#cart-items {
+  padding: 0;
+}
+#cart-items li img {
+  width: 7vh;
+  margin: 3px;
+}
+
+#rm-btn {
+  position: absolute;
+  right: 1vw;
 }

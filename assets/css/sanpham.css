@@ -216,3 +216,6 @@
 .product-card:hover .product-details #add-cart {
   opacity: 1;
 }
+#add-cart:hover {
+  color: var(--detail-color);
+}
