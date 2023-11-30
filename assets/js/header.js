@@ -2,17 +2,14 @@ function changeSignUp() {
   const container = document.getElementById("login-container");
   container.classList.remove("right-panel-active");
 }
-
 function changeSignIn() {
   const container = document.getElementById("login-container");
   container.classList.add("right-panel-active");
 }
-
 function showPopup() {
   var login_popup = document.getElementById("loginPopup");
   login_popup.style.display = "block";
 }
-
 // Function to store user information in local storage during signup
 function signup() {
   var usernameInput = document.getElementById("username-signup").value;
@@ -88,7 +85,6 @@ function signin() {
   document.getElementById("username").value = "";
   document.getElementById("password").value = "";
 }
-
 // Function to handle logout
 function logout() {
   var usernameShow = document.getElementById("username_show");
@@ -103,7 +99,6 @@ function logout() {
   usernameShow.style.display = "none";
   userPopup.style.display = "none";
 }
-
 // Function to set up the user display on page load
 function setupUserDisplay() {
   var usernameShow = document.getElementById("username_show");
@@ -129,11 +124,9 @@ function setupUserDisplay() {
     usernameShow.style.display = "block";
   }
 }
-
 function sendEmail() {
   alert("Chúng tôi đã gửi mã đổi password đến địa chỉ mail của bạn!");
 }
-
 function closeLoginPopUp(event) {
   var loginContainer = document.getElementById("login-container");
   var forgotContainer = document.getElementById("forgot-container");
@@ -149,7 +142,6 @@ function closeLoginPopUp(event) {
     loginPopup.style.display = "none";
   }
 }
-
 function flip() {
   document.querySelector("#flipper").classList.toggle("flip");
 }
@@ -161,10 +153,12 @@ function addItem(event) {
     event.preventDefault();
   }
 }
-function showUserPopup() {
-  var user_popup = document.getElementById("userPopup");
-  user_popup.style.display = "block";
-}
+
+$(document).ready(function () {
+  $("#username_show").click(function () {
+    $("#userPopup").slideToggle();
+  });
+});
 
 function closeUserPopUp(event) {
   var userContainer = document.getElementById("user-popup-container");

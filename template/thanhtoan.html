@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--Ghe_detail-->
+    <link rel="stylesheet" href="../assets/css/thanhtoan.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="left-container">
+        <a href="./LandingPage.html"><h1>Make My Home</h1></a>
+        <p id="direction">
+          <span id="blue">Cart</span>&nbsp;&nbsp;<span id="cursor">></span
+          >&nbsp;&nbsp;Shipping Information
+        </p>
+        <h2>Shipping Information</h2>
+        <p id="already">
+          Already have an account with us?
+          <a href="#" id="sign-in-ref">Sign in</a>
+        </p>
+        <input type="text" id="name" placeholder="Full name" />
+        <div id="e-p-container">
+          <input type="text" id="email" placeholder="Email" />
+          <input type="text" id="phone" placeholder="Phone" />
+        </div>
+        <input type="text" id="address" placeholder="Address" />
+        <div id="selector-container">
+          <select>
+            <option disabled selected hidden>Choose province</option>
+            <option>TP.HCM</option>
+          </select>
+          <select>
+            <option disabled selected hidden>Choose district</option>
+            <option>Gò Vấp</option>
+          </select>
+          <select>
+            <option disabled selected hidden>Choose ward</option>
+            <option>Phường 10</option>
+          </select>
+        </div>
+        <h2>Shipping Method</h2>
+        <!-- Nhận hàng -->
+        <div class="radio-border">
+          <input type="radio" id="toanquoc" name="shipping-method" />
+          <label for="toanquoc"
+            >TOÀN QUỐC - ViettelPost giao hàng tận nơi (có phí)</label
+          >
+        </div>
+        <div class="radio-border">
+          <input type="radio" id="hcm" name="shipping-method" />
+          <label for="hcm">HCM - MakeMyHome giao hàng tận nơi (Có phí)</label>
+        </div>
+        <div class="radio-border">
+          <input type="radio" id="atstore" name="shipping-method" />
+          <label for="atstore">Tôi sẽ đến nhận tại cửa hàng</label>
+        </div>
+        <h2>Payment Method</h2>
+        <!-- Thanh toán -->
+        <div class="radio-border2">
+          <input type="radio" id="cod" name="payment-method" />
+          <label for="cod"
+            ><img src="../assets/images/thanhtoan/cod.svg" />Thanh toán khi giao
+            hàng (COD) - Chỉ áp dụng khu vực nội thành HCM</label
+          >
+        </div>
+        <!-- Xử lý javascript -->
+        <p id="cod-description">
+          Chỉ áp dụng khu vực Nội thành HCM (cách kho hàng <20km) do Make My
+          Home trực tiếp giao hàng và lắp đặt. Make My Home sẽ quyết định cuối
+          cùng về hình thức giao hàng và COD cho khách hàng.
+        </p>
+        <!-- ---- -->
+        <div class="radio-border2">
+          <input type="radio" id="online" name="payment-method" />
+          <label for="online"
+            ><img src="../assets/images/thanhtoan/nganluong.svg" />Thanh toán
+            online</label
+          >
+        </div>
+        <!-- Chuyển trang -->
+        <div id="flex-navigator">
+          <a href="#" id="cart-ref">Cart</a>
+          <a href="#" id="button-ref">Finish your order</a>
+        </div>
+        <p id="thanh-toan-footer">Powered by Haravan</p>
+      </div>
+      <!-- Bên phải -->
+      <div class="right-container">
+        <div id="sanpham-gia-container">
+          <div id="sanpham-detail-flex">
+            <img src="../assets/images/thanhtoan/sanpham.jpg" />
+            <div>
+              <p><b>Độc lập</b></p>
+              <p>Tủ quần áo 1</p>
+            </div>
+          </div>
+          <p id="gia-sanpham">19,630,000<span class="underline">đ</span></p>
+        </div>
+        <hr />
+        <div id="discount-container">
+          <input type="text" id="discount-code" placeholder="Discount code" />
+          <button id="apply">Apply</button>
+        </div>
+        <hr />
+        <div id="price-detail-container-1">
+          <p id="left-detail1">Tạm tính</p>
+          <p id="right-detail1">1,990,000<span class="underline">đ</span></p>
+        </div>
+        <div id="price-detail-container-2">
+          <p id="left-detail2">Phí vận chuyển</p>
+          <p id="right-detail2">Nhân viên sẽ liên hệ và báo phí vận chuyển</p>
+        </div>
+        <hr />
+        <div id="final-price-container">
+          <p id="left-detail3">Tổng</p>
+          <p id="right-detail3">
+            <span id="vnd">VND</span><span id="final-price">19,640,000</span
+            ><span class="underline">đ</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#cod").click(function () {
+        $("#cod-description").slideDown();
+      });
+      $("#online").click(function () {
+        $("#cod-description").slideUp();
+      });
+    });
+  </script>
+</html>
