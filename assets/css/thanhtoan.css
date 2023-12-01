@@ -138,7 +138,8 @@ body {
 }
 
 #sign-in-ref {
-  text-decoration: none;
+  text-decoration: underline;
+  color: blue;
 }
 #atstore #cursor {
   font-weight: bold;
@@ -242,4 +243,22 @@ body {
   position: relative;
   top: -1%;
   margin: 0;
+}
+#cart-items li {
+  display: flex;
+  height: 10vh;
+  margin-top: 10px;
+}
+#cart-items {
+  padding: 1%;
+}
+#cart-items li img {
+  width: 10vh;
+
+  margin-right: 10px;
+}
+
+#rm-btn {
+  position: absolute;
+  right: 5%;
 }

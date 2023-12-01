@@ -128,7 +128,7 @@
         <div class="login-container" id="login-container">
           <div class="form-container sign-up-container">
             <form action="#">
-              <h1>Create Account</h1>
+              <h1>Tạo tài khoản</h1>
               <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social"
@@ -138,7 +138,7 @@
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
-              <span>or use your email for registration</span>
+              <span>hoặc bạn có thể đăng ký bằng Email</span>
               <input type="text" placeholder="Name" id="username-signup" />
               <input type="email" placeholder="Email" id="email-signup" />
               <input
@@ -146,12 +146,12 @@
                 placeholder="Password"
                 id="password-signup"
               />
-              <button onclick="signup()">Sign Up</button>
+              <button onclick="signup()">Đăng ký</button>
             </form>
           </div>
           <div class="form-container sign-in-container">
             <form action="#">
-              <h1>Sign in</h1>
+              <h1>Đăng nhập</h1>
               <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social"
@@ -161,33 +161,33 @@
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
-              <span>or use your account</span>
+              <span>hoặc đăng nhập bằng cách sau</span>
               <input type="text" placeholder="Username" id="username" />
               <input type="password" placeholder="Password" id="password" />
               <div onclick="flip()" style="margin-bottom: 10px" id="flip-btn">
-                Forgot your password?
+                Quên mật khẩu !?
               </div>
-              <button onclick="signin()">Sign In</button>
+              <button onclick="signin()">Đăng nhập</button>
             </form>
           </div>
           <div class="overlay-container">
             <div class="overlay">
               <div class="overlay-panel overlay-left">
-                <h1 class="highlight">Welcome Back!</h1>
+                <h1 class="highlight">Chào mừng bạn trở lại!</h1>
                 <p class="highlight">
-                  To keep connected with us please login with your personal info
+                  Hãy đăng ký để trải nghiệm dịch vụ một cách tốt nhất
                 </p>
                 <button class="ghost" id="signIn" onclick="changeSignUp()">
-                  Sign In
+                  Đăng nhập
                 </button>
               </div>
               <div class="overlay-panel overlay-right">
-                <h1 class="highlight">Hello, Friend!</h1>
+                <h1 class="highlight">Chào bạn!</h1>
                 <p class="highlight">
-                  Enter your personal details and start journey with us
+                  Đăng nhập để cùng trải nghiệm những dịch vụ tuyệt vời nhất
                 </p>
                 <button class="ghost" id="signUp" onclick="changeSignIn()">
-                  Sign Up
+                  Đăng ký
                 </button>
               </div>
             </div>
@@ -197,13 +197,13 @@
       <div class="back">
         <div class="login-container" id="forgot-container">
           <form action="#" id="forgot-form">
-            <h1>Enter your Email:</h1>
+            <h1>Vui lòng nhập Email của bạn:</h1>
             <input type="email" placeholder="Email" />
             <div onclick="flip()" style="margin-bottom: 10px" id="flip-btn">
               <i class="fa-solid fa-arrow-left"></i>
-              Back to Sign up
+              Quay về đăng nhập
             </div>
-            <button onclick="sendEmail()">Send</button>
+            <button onclick="sendEmail()">Gửi</button>
           </form>
         </div>
       </div>
@@ -214,7 +214,9 @@
 <div id="cart-dropdown" class="cart-dropdown">
   <ul id="cart-items"></ul>
   <div id="cart-total">Total: $0.00</div>
-  <button onclick="checkout()">Checkout</button>
+  <button id="Checkout">
+    <a href="./thanhtoan.html">Thanh toán</a>
+  </button>
 </div>
 
 <div id="userPopup" class="userPopup" onclick="closeUserPopUp(event)">
