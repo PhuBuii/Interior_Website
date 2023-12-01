@@ -41,7 +41,7 @@
               style="display: none"
             />
             <!-- ten user -->
-            <p>Kiet pro</p>
+            <p id="username-mini"></p>
           </div>
           <div class="lef-content">
             <div class="list">
@@ -79,11 +79,11 @@
               <table>
                 <tr>
                   <td>Tên đăng nhập</td>
-                  <td>Kiệt pro</td>
+                  <td id="username-large"></td>
                 </tr>
                 <tr>
                   <td>Email</td>
-                  <td>anhkiet18072002@gmail.com</td>
+                  <td id="email"></td>
                 </tr>
                 <tr>
                   <td>Số diện thoại</td>
@@ -92,7 +92,7 @@
                 <tr>
                   <td>Giới tính</td>
                   <td>
-                    <input type="radio" name="" id="" />
+                    <input type="radio" name="" id="" checked />
                     <label for="nam">Nam</label>
                     <input type="radio" name="" id="" />
                     <label for="nam">Nữ</label>
@@ -140,33 +140,20 @@
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/header&footer.js"></script>
-    <script src="../assets/js/slideshow.js"></script>
+
     <script>
-      function chooseFile(input) {
-        var preview = document.getElementById("image-preview");
-        var imgFile = document.getElementById("imgFile");
-        var file = input.files[0];
+      let user = localStorage.getItem("login");
+      if (user) {
+        user = JSON.parse(user); // Parse the JSON string to a JavaScript object
 
-        if (file) {
-          var reader = new FileReader();
-          reader.onload = function (e) {
-            var img = new Image();
-            img.src = e.target.result;
+        var username_large = document.getElementById("username-large");
+        var username_mini = document.getElementById("username-mini");
+        var emailElement = document.getElementById("email");
 
-            // Display image in image-preview
-            preview.innerHTML = ""; // Clear previous content
-            preview.appendChild(img);
-
-            // Display image in imgFile
-            imgFile.src = e.target.result;
-          };
-
-          reader.readAsDataURL(file);
-        }
+        username_large.innerText = user.username;
+        username_mini.innerText = user.username;
+        emailElement.innerText = user.email; // Update the email in the DOM
       }
-    </script>
-
-    <script>
       // Function to populate dropdown with numbers
       function populateDropdown(select, start, end) {
         for (let i = start; i <= end; i++) {
@@ -208,6 +195,28 @@
       let yearDropdown = document.getElementById("year");
       let currentYear = new Date().getFullYear();
       populateDropdown(yearDropdown, currentYear - 100, currentYear);
+      function chooseFile(input) {
+        var preview = document.getElementById("image-preview");
+        var imgFile = document.getElementById("imgFile");
+        var file = input.files[0];
+
+        if (file) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            var img = new Image();
+            img.src = e.target.result;
+
+            // Display image in image-preview
+            preview.innerHTML = ""; // Clear previous content
+            preview.appendChild(img);
+
+            // Display image in imgFile
+            imgFile.src = e.target.result;
+          };
+
+          reader.readAsDataURL(file);
+        }
+      }
     </script>
   </body>
 </html>
