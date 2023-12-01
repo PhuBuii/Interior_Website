@@ -18,9 +18,7 @@
   border: 1px solid #000;
   cursor: pointer;
 }
-.product-card .soldout {
-  width: 15vw;
-}
+
 /* CSS cho filter bar */
 .filter-bar {
   text-align: center;
