@@ -130,20 +130,26 @@
             <form action="#">
               <h1>Tạo tài khoản</h1>
               <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"
+                <a href="#" class="social fb"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social gg"
                   ><i class="fab fa-google-plus-g"></i
                 ></a>
-                <a href="#" class="social"
+                <a href="#" class="social linked"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
               <span>hoặc bạn có thể đăng ký bằng Email</span>
-              <input type="text" placeholder="Name" id="username-signup" />
+              <input
+                type="text"
+                placeholder="Tên đăng nhập"
+                id="username-signup"
+              />
               <input type="email" placeholder="Email" id="email-signup" />
               <input
                 type="password"
-                placeholder="Password"
+                placeholder="Mật khẩu"
                 id="password-signup"
               />
               <button onclick="signup()">Đăng ký</button>
@@ -153,17 +159,19 @@
             <form action="#">
               <h1>Đăng nhập</h1>
               <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"
+                <a href="#" class="social fb"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social gg"
                   ><i class="fab fa-google-plus-g"></i
                 ></a>
-                <a href="#" class="social"
+                <a href="#" class="social linked"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
               <span>hoặc đăng nhập bằng cách sau</span>
-              <input type="text" placeholder="Username" id="username" />
-              <input type="password" placeholder="Password" id="password" />
+              <input type="text" placeholder="Tên đăng nhập" id="username" />
+              <input type="password" placeholder="Mật khẩu" id="password" />
               <div onclick="flip()" style="margin-bottom: 10px" id="flip-btn">
                 Quên mật khẩu !?
               </div>
@@ -173,7 +181,7 @@
           <div class="overlay-container">
             <div class="overlay">
               <div class="overlay-panel overlay-left">
-                <h1 class="highlight">Chào mừng bạn trở lại!</h1>
+                <h1 class="highlight">Chào bạn mới!</h1>
                 <p class="highlight">
                   Hãy đăng ký để trải nghiệm dịch vụ một cách tốt nhất
                 </p>

@@ -438,8 +438,14 @@ header .navbar .menu_3 ul {
   color: rgb(205, 205, 205);
 }
 
-.social:hover {
-  box-shadow: 0 0 5px rgb(199, 199, 199);
+.fb:hover {
+  color: blue;
+}
+.linked:hover {
+  color: rgb(0, 255, 195);
+}
+.gg:hover {
+  color: red;
 }
 .userPopup {
   z-index: 10;
