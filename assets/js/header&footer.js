@@ -16,8 +16,9 @@ function loadCSS(url) {
 function loadIcon(url) {
   var link = document.createElement("link");
   link.rel = "icon";
-  link.type = "image/x-icon";
+  link.type = "image/png";
   link.href = url;
+  link.sizes = "16x16";
   document.head.appendChild(link);
 }
 function loadJS(url) {
@@ -27,7 +28,9 @@ function loadJS(url) {
   document.head.appendChild(script);
 }
 
-loadIcon("../assets/images/navbar/logo.webp");
+loadIcon(
+  "https://theme.hstatic.net/1000280685/1000722794/14/favicon.png?v=1307"
+);
 loadHTML("./header.html", "header");
 loadHTML("./footer.html", "footer");
 loadCSS("../assets/css/header.css");

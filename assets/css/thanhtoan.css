@@ -262,3 +262,15 @@ body {
   position: absolute;
   right: 5%;
 }
+.quantity-controls {
+  display: flex;
+}
+.quantity-controls button {
+  border-radius: 50%;
+  width: 1.5vw;
+  height: 1.5vw;
+  display: flex;
+  margin: 0 2%;
+  align-items: center;
+  justify-content: center;
+}

@@ -531,8 +531,17 @@ header .navbar .menu_3 ul {
 #Checkout a {
   text-decoration: none;
   font-size: 12px;
-  color: white;
 }
 #Checkout:hover {
   box-shadow: 2px 2px 1px black;
+}
+#Checkout:hover a {
+  color: white;
+}
+.quantity-controls button {
+  border-radius: 50%;
+  width: 1.5vw;
+  height: 1.5vw;
+  justify-content: center;
+  align-items: center;
 }

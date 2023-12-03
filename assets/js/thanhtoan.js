@@ -114,19 +114,19 @@ function updateCartSession() {
     currency: "VND",
   }).format(total);
   cartTotal.innerText = formattedTotal;
-  document.getElementById("right-detail2").innerText = new Intl.NumberFormat(
-    "vi-VN",
-    {
-      style: "currency",
-      currency: "VND",
-    }
-  ).format(delivery);
 
   finalPrice.innerText = new Intl.NumberFormat("vi-VN", {
     style: "currency",
     currency: "VND",
   }).format(total + delivery);
 }
+document.getElementById("right-detail2").innerText = new Intl.NumberFormat(
+  "vi-VN",
+  {
+    style: "currency",
+    currency: "VND",
+  }
+).format(parseFloat(document.getElementById("right-detail2").textContent));
 updateCartSession();
 function payment() {
   alert("Bạn đã thanh toán thành công!");
@@ -140,5 +140,12 @@ function discount() {
     delivery.innerText = 150000;
     alert("Mã giảm giá không tồn tại!");
   }
+  document.getElementById("right-detail2").innerText = new Intl.NumberFormat(
+    "vi-VN",
+    {
+      style: "currency",
+      currency: "VND",
+    }
+  ).format(parseFloat(document.getElementById("right-detail2").textContent));
   updateCartSession();
 }
