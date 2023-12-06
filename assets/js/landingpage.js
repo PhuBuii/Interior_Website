@@ -108,3 +108,25 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+
+$(document).ready(function () {
+  // Số lượng sản phẩm bạn muốn hiển thị ban đầu
+  var initialVisibleItems = 6;
+  var count = 0;
+
+  // Ẩn các sản phẩm vượt quá số lượng ban đầu
+  $(".project:gt(" + (initialVisibleItems - 1) + ")").addClass("hidden");
+
+  // Xử lý sự kiện khi nút "Xem thêm" được nhấp
+  $(".btn-more").click(function (event) {
+    if (count == 0) {
+      event.preventDefault();
+      // Hiển thị tất cả các sản phẩm
+      $(".project.hidden").removeClass("hidden");
+      count += 1;
+    } else {
+      // Chuyển hướng đến trang mới
+      window.location.href = $(this).attr("href");
+    }
+  });
+});

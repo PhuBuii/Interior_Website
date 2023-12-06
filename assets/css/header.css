@@ -48,8 +48,13 @@ header .header_right_icon > a {
 }
 
 header .header_right .header_right_search {
-  border-bottom: 1px solid black;
   display: flex;
+  position: relative;
+  top: 70%;
+}
+.header_right .header_right_search i {
+  position: relative;
+  top: 40%;
 }
 
 header .header_right .header_right_search input {
@@ -544,4 +549,11 @@ header .navbar .menu_3 ul {
   height: 1.5vw;
   justify-content: center;
   align-items: center;
+}
+
+.hidden_input {
+  display: none;
+}
+.hidden {
+  display: none;
 }

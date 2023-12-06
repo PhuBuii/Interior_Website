@@ -422,3 +422,15 @@ function Thanhtoan(event) {
     event.preventDefault();
   }
 }
+$(document).ready(function () {
+  $(".search_icon").click(function (event) {
+    if ($(".hidden_input").css("display") === "none") {
+      event.preventDefault();
+      $(".hidden_input").show();
+      $(".header_right_search").css("border-bottom", "1px solid black");
+      $(".header_right_search i").css("top", "0%");
+    } else {
+      window.location.href = "../template/ghe.html";
+    }
+  });
+});
